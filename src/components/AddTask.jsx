@@ -12,11 +12,11 @@ const AddTask = ({ listTask, setlistTask }) => {
 
     return (
         <section>
-            <h1>Agregar una tarea</h1>
+            <h1>Tareas</h1>
 
             <form onSubmit={handleSubmit}>
-                <input type="text" />
-                <textarea></textarea>
+                <input type="text" placeholder=" Titulo de tarea" />
+                <textarea placeholder="Descripción de tarea"></textarea>
 
                 <button type="submit">Agregar</button>
             </form>
