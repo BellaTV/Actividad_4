@@ -13,3 +13,23 @@ button {
     background-color:#272d2b;
     border: #161817;
 }
+
+.see-task {
+   
+    .task-item {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      &.completed {
+        text-decoration: line-through;
+        color: gray;
+      }
+  
+      button {
+        margin-left: 10px;
+      }
+    }
+  }
