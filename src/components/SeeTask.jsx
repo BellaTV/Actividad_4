@@ -1,9 +1,6 @@
 import PropTypes from "prop-types";
 
-
-
-
-const SeeTask = ({ listTask, onDone }) => {
+const SeeTask = ({ listTask}) => {
     const elements = listTask.map((item, index) => (
         <li key={index}>
             <h2>{item.title || "Sin título"}</h2>
