@@ -18,8 +18,7 @@ function Home() {
                 <h1 className="mainTitle">Lista de Tareas</h1>
             </section>
 
-            
-                <Header setShowComponent={setShowComponent} />
+            <Header setShowComponent={setShowComponent} />
             <div className="card">
                 {showCmponent ? <AddTask listTask={listTask} setlistTask={setlistTask} /> : <SeeTask listTask={listTask} setlistTask={setlistTask} />}
             </div>

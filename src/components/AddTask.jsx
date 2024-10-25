@@ -19,7 +19,6 @@ const AddTask = ({ listTask, setlistTask }) => {
             <form onSubmit={handleSubmit}>
                 <input className="formText" type="text" placeholder=" Titulo de tarea" />
                 <textarea className="formText" placeholder="Descripción de tarea"></textarea>
-
                 <button className="submitButton" type="submit">Agregar</button>
             </form> 
         </section>

@@ -17,8 +17,7 @@ const SeeTask = ({ listTask, setlistTask}) => {
         const newList = listTask.filter((task, id) => id !== index);
         setlistTask(newList);
         console.log(setlistTask);
-     
-    }
+    };
 
     const elements = listTask.map((item, index) => (
     <li key={index} className={`taskItem ${completed[index] ? "completed" : "" }`} >
