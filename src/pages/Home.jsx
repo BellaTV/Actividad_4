@@ -21,7 +21,7 @@ function Home() {
             
                 <Header setShowComponent={setShowComponent} />
             <div className="card">
-                {showCmponent ? <AddTask listTask={listTask} setlistTask={setlistTask} /> : <SeeTask listTask={listTask} />}
+                {showCmponent ? <AddTask listTask={listTask} setlistTask={setlistTask} /> : <SeeTask listTask={listTask} setlistTask={setlistTask} />}
             </div>
         </>
     );
