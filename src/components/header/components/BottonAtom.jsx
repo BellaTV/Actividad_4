@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./BottonAtom.scss";
 
 const BottonAtom = ({ text, value, setShowComponent }) => {
     const handleClick = () => {
@@ -9,7 +10,7 @@ const BottonAtom = ({ text, value, setShowComponent }) => {
 
     return (
         <li>
-            <button onClick={handleClick}>{text}</button>
+            <button className="addButton" onClick={handleClick}>{text}</button>
         </li>
     );
 };

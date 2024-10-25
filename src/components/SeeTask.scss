@@ -1,0 +1,50 @@
+
+.see-task{
+    display: flex;
+    flex-wrap: wrap;
+
+    .todoList{
+        width: 100dvh;
+        color: #4B5550;
+
+        .taskItem {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+
+            
+            .taskText {
+                width: 95%;
+                margin-left: 10px;
+                word-wrap: break-word;
+
+                h2, p {
+                    color: #4B5550;
+                }
+            }
+
+            .completedCheckbox {
+                background-color: #c3fbe3c2 ;
+                border-color: #c7fae4;
+                margin-right: 10px;
+                min-width: 25px;
+                
+            }
+
+        &.completed {
+            .completedCheckbox{
+                background-color: #FF5741;
+            }
+            .taskText {
+                h2, p {
+                    text-decoration: line-through;
+                    color: #3765539c; 
+                }
+            }
+        }
+    }
+}
+}
+button{
+    
+}

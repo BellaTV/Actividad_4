@@ -1,0 +1,27 @@
+ .addSection {
+    margin-bottom: 0;
+
+ form {
+        display: flex;
+        flex-wrap: wrap;
+
+        .formText{
+            background-color: #c7e7d9c2;
+            border: #c7e7d9c2;
+            min-width: 90dvb;
+            color: #4B5550;
+        }
+
+        .submitButton{
+            color: #fff;
+            background-color: #ff5741;
+            max-width: 300px;
+            border-color: #8e4c2e00;
+            font-weight: bold;
+            margin: 0 auto !important;
+            &:hover{
+            background-color: #f31e02a9;
+            }
+        }
+    }
+ }

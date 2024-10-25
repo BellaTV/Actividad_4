@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./AddTask.scss"
 
 const AddTask = ({ listTask, setlistTask }) => {
     const handleSubmit = (e) => {
@@ -8,18 +9,19 @@ const AddTask = ({ listTask, setlistTask }) => {
         const description = e.target[1].value; // Obtén el valor del textarea
 
         setlistTask([...listTask, { title, description }]);
+        e.target[0].value = "";
+        e.target[1].value = "";
     };
 
     return (
-        <section>
-            <h1>Tareas</h1>
+        <section className="addSection">
 
             <form onSubmit={handleSubmit}>
-                <input type="text" placeholder=" Titulo de tarea" />
-                <textarea placeholder="Descripción de tarea"></textarea>
+                <input className="formText" type="text" placeholder=" Titulo de tarea" />
+                <textarea className="formText" placeholder="Descripción de tarea"></textarea>
 
-                <button type="submit">Agregar</button>
-            </form>
+                <button className="submitButton" type="submit">Agregar</button>
+            </form> 
         </section>
     );
 };

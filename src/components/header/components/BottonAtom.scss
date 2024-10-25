@@ -1,0 +1,10 @@
+.addButton{
+    color: #fff;
+    background-color:#4aa079 ;
+    font-weight: 600;
+    min-width: 200px;
+    border-color: #4aa079;
+    &:hover{
+        background-color: #65dfa8e1;
+    }
+}
